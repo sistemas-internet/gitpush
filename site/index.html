@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 
 
@@ -97,7 +97,7 @@
 								<li class="active"><a href="#top" class="scroll-to">Home</a></li>
 								<li><a href="#services" class="scroll-to">Serviços</a></li>
 								<li><a href="#vehicles" class="scroll-to">Modelos de veículos</a></li>
-<!--								<li><a href="#locations" class="scroll-to">Localizações</a></li>-->
+								<!--								<li><a href="#locations" class="scroll-to">Localizações</a></li>-->
 								<li><a href="#contact" class="scroll-to">Contato</a></li>
 							</ul>
 
@@ -1028,7 +1028,7 @@
 
 					</div>
 
-					<!-- Review Nav start -->
+
 					<ol class="carousel-indicators">
 						<li data-target="#reviews-carousel" data-slide-to="0" class="active"></li>
 						<li data-target="#reviews-carousel" data-slide-to="1"></li>
@@ -1112,20 +1112,20 @@
 					<div class="alert hidden" id="contact-form-msg"></div>
 
 					<div class="form-group">
-						<input type="text" class="form-control   text-field" name="nome" placeholder="DIGITE SEU NOME:">
+						<input type="text" class="form-control   text-field" name="nome" placeholder="Digite seu nome:">
 						<div class="clearfix"></div>
 					</div>
 
 					<div class="form-group">
-						<input type="tel" class="form-control telephone text-field" name="telephone" placeholder="DIGITE SEU TELEFONE:">
+						<input type="tel" class="form-control telephone text-field" name="telephone" placeholder="Digite seu telefone:">
 					</div>
 
 					<div class="form-group">
-						<input type="email" class="form-control email text-field" name="email" placeholder="DIGITE SEU E-MAIL:">
+						<input type="email" class="form-control email text-field" name="email" placeholder="Digite seu e-mail:">
 					</div>
 
 					<div class="form-group">
-						<textarea class="form-control message" name="mensagem" placeholder="DIGITE SUA MENSAGEM:"></textarea>
+						<textarea class="form-control message" name="mensagem" placeholder="Digite sua mensagem:"></textarea>
 					</div>
 
 					<input type="submit" class="btn submit-message" name="enviar-form-contato" value="Enviar">
@@ -1152,7 +1152,7 @@
 						<li><a class="scroll-to" href="#services">Serviços</a></li>
 						<li><a class="scroll-to" href="#vehicles">Modelos de veículos</a></li>
 						<li><a class="scroll-to" href="#reviews">Reviews</a></li>
-<!--						<li><a class="scroll-to" href="#locations">Localizações</a></li>-->
+						<!--						<li><a class="scroll-to" href="#locations">Localizações</a></li>-->
 						<li><a class="scroll-to" href="#contact">Contato</a></li>
 					</ul>
 					<div class="clearfix"></div>
@@ -1400,7 +1400,7 @@
 							<button type="button" class="btn btn-default btn-gray" data-dismiss="modal">Cancelar</button>
 						</span>
 						<span class="btn-border btn-yellow">
-							<button type="submit" class="btn btn-primary btn-yellow">Reserve agora</button>
+							<button type="submit" class="btn btn-primary btn-yellow" data-toggle="modal" data-target="#confModal" data-dismiss="modal">Reserve agora</button>
 						</span>
 					</div>
 
@@ -1411,6 +1411,43 @@
 	</div>
 
 
+
+
+
+	<div class="modal fade" id="confModal" tabindex="-1" role="dialog" aria-labelledby="confModalLabel" aria-hidden="true" data-backdrop="static">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<form action="#" method="post" id="checkout-form" name="checkout-form">
+					<input type="hidden" name="action" value="send_inquiry_form" />
+					<input type="text" class="website_hp" name="website_hp" />
+
+
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						<h4 class="modal-title" id="myModalLabel">Confirmado</h4>
+					</div>
+
+					<div class="modal-body">
+
+						<div   style=" padding:50px 0;text-align: center">
+							<h4> 
+							Mandamos uma mensagem em seu e-mail
+							</h4>
+							<h5>empresa@empresa.com.br</h5>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<span class="btn-border btn-gray">
+							<button type="button" class="btn btn-default btn-gray" data-dismiss="modal">CANCELAR</button>
+						</span>
+						<span class="btn-border btn-yellow">
+							<a href="index.html" class="btn btn-primary btn-yellow">OK</a>
+						</span>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
 
 
 	<script src="js/jquery-1.11.0.min.js"></script>
